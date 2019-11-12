@@ -9,13 +9,21 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class DecimalToRomanNumeralTest {
     @Test
     void zeroIsEmptyString() {
-        RomanNumeral romanNumeral = new RomanNumeral(0);
-        assertEquals("", romanNumeral.toString());
+        check(0, "");
+    }
+
+    private void check(int i, String s) {
+        RomanNumeral romanNumeral = new RomanNumeral(i);
+        assertEquals(s, romanNumeral.toString());
     }
 
     @Test
-    void oneIsEmptyString() {
-        RomanNumeral romanNumeral = new RomanNumeral(1);
-        assertEquals("I", romanNumeral.toString());
+    void oneIsI() {
+        check(1, "I");
+    }
+
+    @Test
+    void twoIsII() {
+        check(2, "II");
     }
 }

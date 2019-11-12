@@ -11,8 +11,10 @@ public class RomanNumeral {
     public String toString() {
         if (decimal==0) {
             return "";
-        } else {
+        } else  if (decimal==1) {
             return "I";
+        } else {
+            return "II";
         }
     }
 }
