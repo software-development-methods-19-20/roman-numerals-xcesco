@@ -6,9 +6,11 @@ import dssc.roman.RomanNumeral;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * To check value, use the <a href="https://www.calculatorsoup.com/calculators/conversions/roman-numeral-converter.php">online calculator</a>
+ */
 public class DecimalToRomanNumeralTest {
-
-
+    
     @Test
     void zeroIsEmptyString() {
         check(0, "");
