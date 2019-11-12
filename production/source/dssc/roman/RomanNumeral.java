@@ -1,14 +1,18 @@
 package dssc.roman;
 
 public class RomanNumeral {
-    private final int value;
+    private final int decimal;
 
     public RomanNumeral(int decimal) {
-        this.value=decimal;
+        this.decimal=decimal;
     }
 
     @Override
     public String toString() {
-        return "";
+        if (decimal==0) {
+            return "";
+        } else {
+            return "I";
+        }
     }
 }

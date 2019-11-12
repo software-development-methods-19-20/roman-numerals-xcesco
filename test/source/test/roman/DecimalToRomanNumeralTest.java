@@ -12,4 +12,10 @@ public class DecimalToRomanNumeralTest {
         RomanNumeral romanNumeral = new RomanNumeral(0);
         assertEquals("", romanNumeral.toString());
     }
+
+    @Test
+    void oneIsEmptyString() {
+        RomanNumeral romanNumeral = new RomanNumeral(1);
+        assertEquals("I", romanNumeral.toString());
+    }
 }
