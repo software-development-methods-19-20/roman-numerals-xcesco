@@ -6,4 +6,9 @@ public class RomanNumeral {
     public RomanNumeral(int decimal) {
         this.value=decimal;
     }
+
+    @Override
+    public String toString() {
+        return "";
+    }
 }
