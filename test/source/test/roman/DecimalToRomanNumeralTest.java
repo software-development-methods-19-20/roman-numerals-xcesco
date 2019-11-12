@@ -7,6 +7,8 @@ import dssc.roman.RomanNumeral;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class DecimalToRomanNumeralTest {
+
+
     @Test
     void zeroIsEmptyString() {
         check(0, "");
@@ -30,5 +32,15 @@ public class DecimalToRomanNumeralTest {
     @Test
     void threeIsIII() {
         check(3, "III");
+    }
+
+    @Test
+    void number30IsXXX() {
+        check(30, "XXX");
+    }
+
+    @Test
+    void number99IsXXX() {
+        check(99, "XCIX");
     }
 }
