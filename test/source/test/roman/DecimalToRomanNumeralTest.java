@@ -43,4 +43,9 @@ public class DecimalToRomanNumeralTest {
     void number99IsXXX() {
         check(99, "XCIX");
     }
+
+    @Test
+    void number199IsXXX() {
+        check(99, "XCIX");
+    }
 }
