@@ -6,6 +6,7 @@ import static java.lang.String.format;
 public class RomanNumeral {
     private final int decimal;
 
+
     private static String[] UNIT_SYMBOLS={"", "I", "II","III","IV","V","VI","VII","VIII","IX"};
     private static String[] DOZEN_SYMBOLS={"", "X", "XX", "XXX", "XL","L","LX","LXX","LXXX","XC"};
     private static String[] HUNDREDS_SYMBOLS={"", "C", "CC", "CCC", "CD","D","DC","DCC","DCCC","CM"};
@@ -14,7 +15,7 @@ public class RomanNumeral {
 
     public RomanNumeral(int decimal) {
         int MAX_VALUE = 3999;
-        int MIN_VALUE = 0;
+        int MIN_VALUE = 0;ggg
         if (decimal> MAX_VALUE || decimal< MIN_VALUE) {
             throw new RuntimeException(format("The number must be between %s and %s", MIN_VALUE, MAX_VALUE));
         }
