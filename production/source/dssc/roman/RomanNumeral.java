@@ -15,7 +15,7 @@ public class RomanNumeral {
 
     public RomanNumeral(int decimal) {
         int MAX_VALUE = 3999;
-        int MIN_VALUE = 0;ggg
+        int MIN_VALUE = 0;
         if (decimal> MAX_VALUE || decimal< MIN_VALUE) {
             throw new RuntimeException(format("The number must be between %s and %s", MIN_VALUE, MAX_VALUE));
         }
